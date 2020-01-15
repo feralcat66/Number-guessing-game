@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Guess the Number</title>
+</head>
+
+<body>
+    <div>
+        <h1> Guess the Number </h1>
+            <p>The computer will generate a random number. Type an answer below and see if your number is too high, too low, or just right. You get 4 guesses</p>
+    </div>
+
+    <div>
+        Your Guess: <input id="guess"> 
+        <div><button id="submitButton">Submit</button></div>
+    </div>
+
+    <div> Guesses remaining: <span id="remainingGuesses">4</span> 
+
+    </div>
+    <div>
+        Guess: <span id="highOrlow"></span>
+    </div>
+    <div><span id="winOrlose"></span></div>
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
