@@ -12,7 +12,7 @@ const imageOne = document.getElementById('imgOne');
 
 const random = Math.floor(Math.random() * 50);
 let remaining = 4;
-
+ 
 
 
 button.addEventListener('click', () => {

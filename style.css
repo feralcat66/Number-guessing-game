@@ -28,3 +28,23 @@ input{
     width: 100px;
     height: 20px;
 }
+.turns{
+    font-size: 20px ;
+    margin-top: 30px;
+}
+#submitButton{
+    background-color: rgba(206, 43, 22, 0.411);
+    color:white;
+    padding: 10px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 50px;
+}
+.guessing{
+    font-size: 20px;
+    margin-top: 20px;
+}
+#highOrlow{
+    font-size: 20px;
+    margin-top: 20px;
+}
