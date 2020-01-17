@@ -17,14 +17,14 @@ let remaining = 4;
 
 button.addEventListener('click', () => {
     const guessNumber = Number(input.value);   
-    const result = compareNumbers(random, guessNumber);
+    const result = compareNumbers(random, guessNumber); 
 
     console.log(random);
 
     if (result === 0) {
         highOrlow.textContent = 'Right on the Money!';
         winner.textContent = 'You Guessed the Right Number!'; 
-        imageOne.src = 'https://cdn2.vectorstock.com/i/1000x1000/37/56/you-win-comic-speech-bubble-cartoon-game-assets-vector-9673756.jpg';
+        imageOne.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSHgEwAH1fyEN3Qk1m57e-bdMsGnMcWeIJ8UFraeTxTpNEMX6zb';
 
     } else if (result === -1) {
         highOrlow.textContent = 'Too Low';
@@ -39,7 +39,7 @@ button.addEventListener('click', () => {
     } if (remaining === 0) {
         document.getElementById('submitButton').disabled = true;
         winner.textContent = 'You are loser!';
-        imageOne.src = 'https://i.pinimg.com/236x/d9/94/bc/d994bced120a29bbb93d241896faeefe.jpg'
+        imageOne.src = 'https://i.pinimg.com/236x/d9/94/bc/d994bced120a29bbb93d241896faeefe.jpg';
 
     }
     

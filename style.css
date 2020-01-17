@@ -1,6 +1,7 @@
 * {
     background-color: black;
     color: bisque;
+
 }
 #submitButton {
     background-color: black;
@@ -10,5 +11,20 @@ h1{
     color: white;
 }
 #imgOne{
-width: 600px;
+width: 500px;
+}
+p{
+    margin-left: 50px;
+    font-size: 20px;
+}
+body{
+    margin:center;
+}
+.input{
+margin-left: 50px;
+font-size:40px;
+}
+input{
+    width: 100px;
+    height: 20px;
 }
