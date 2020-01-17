@@ -1,7 +1,14 @@
 * {
-    background-color: blueviolet;
+    background-color: black;
     color: bisque;
 }
 #submitButton {
     background-color: black;
+}
+h1{
+    margin-top: 80px;
+    color: white;
+}
+#imgOne{
+width: 600px;
 }

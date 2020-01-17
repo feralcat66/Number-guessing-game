@@ -7,9 +7,10 @@ const button = document.getElementById('submitButton');
 const highOrlow = document.getElementById('highOrlow');
 const winner = document.getElementById('winOrlose');
 const remainingGuesses = document.getElementById('remainingGuesses');
-const input = document.getElementById ('guess')
+const input = document.getElementById ('guess');
+const imageOne = document.getElementById('imgOne');
 
-const random = Math.floor(Math.random()*50);
+const random = Math.floor(Math.random() * 50);
 let remaining = 4;
 
 
@@ -17,9 +18,14 @@ let remaining = 4;
 button.addEventListener('click', () => {
     const guessNumber = Number(input.value);   
     const result = compareNumbers(random, guessNumber);
+
+    console.log(random);
+
     if (result === 0) {
         highOrlow.textContent = 'Right on the Money!';
         winner.textContent = 'You Guessed the Right Number!'; 
+        imageOne.src = 'https://cdn2.vectorstock.com/i/1000x1000/37/56/you-win-comic-speech-bubble-cartoon-game-assets-vector-9673756.jpg';
+
     } else if (result === -1) {
         highOrlow.textContent = 'Too Low';
         winner.textContent = 'Try Again';
@@ -31,7 +37,10 @@ button.addEventListener('click', () => {
         remaining -= 1;
         remainingGuesses.textContent = remaining;
     } if (remaining === 0) {
-        document.getElementById('submitButton').disabled = true
+        document.getElementById('submitButton').disabled = true;
+        winner.textContent = 'You are loser!';
+        imageOne.src = 'https://i.pinimg.com/236x/d9/94/bc/d994bced120a29bbb93d241896faeefe.jpg'
+
     }
     
 });
